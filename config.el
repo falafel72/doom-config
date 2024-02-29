@@ -108,5 +108,16 @@
                           (lsp))))  ; or lsp-deferred
 
 ;; Make sure thesis stuff is set up correctly
+(add-to-list 'org-latex-classes '("ucsddissertation"
+                                    "\\documentclass[12pt]{ucsddissertation}
+                                     [NO-DEFAULT-PACKAGES]
+                                     [PACKAGES]"
+                                    ("\\chapter{%s}" . "\\chapter*{%s}")
+                                    ("\\section{%s}" . "\\section*{%s}")
+                                    ("\\subsection{%s}" . "\\subsection*{%s}")
+                                    ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+                                    ("\\paragraph{%s}" . "\\paragraph*{%s}")
+                                    ("\\subparagraph{%s}" . "\\paragraph*{%s}")))
+
 (require 'ox-extra)
 (ox-extras-activate '(latex-header-blocks ignore-headlines))
