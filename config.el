@@ -107,6 +107,10 @@
                           (require 'lsp-pyright)
                           (lsp))))  ; or lsp-deferred
 
+
+(require 'ox-extra)
+(ox-extras-activate '(latex-header-blocks ignore-headlines))
+
 ;; Make sure thesis stuff is set up correctly
 (add-to-list 'org-latex-classes '("ucsddissertation"
                                     "\\documentclass[12pt]{ucsddissertation}
@@ -119,5 +123,20 @@
                                     ("\\paragraph{%s}" . "\\paragraph*{%s}")
                                     ("\\subparagraph{%s}" . "\\paragraph*{%s}")))
 
-(require 'ox-extra)
-(ox-extras-activate '(latex-header-blocks ignore-headlines))
+
+(require 'ess-r-mode)
+
+(setq display-line-numbers-type 'relative)
+
+(use-package org-roam
+  :ensure t
+  :custom
+  (org-roam-directory "~/org-roam-notes")
+  :config
+  (require 'org-roam-dailies)
+  (org-roam-db-autosync-enable)
+  :bind (("C-c n l" . org-roam-buffer-toggle)
+         ("C-c n f" . org-roam-node-find)
+         ("C-c n i" . org-roam-node-insert)
+         ("C-c n t i" . org-roam-dailies-goto-today)
+         ("C-c n t c" . org-roam-dailies-capture-today)))
