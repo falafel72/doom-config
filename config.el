@@ -123,7 +123,6 @@
                                     ("\\paragraph{%s}" . "\\paragraph*{%s}")
                                     ("\\subparagraph{%s}" . "\\paragraph*{%s}")))
 
-
 (require 'ess-r-mode)
 
 (setq display-line-numbers-type 'relative)
@@ -140,3 +139,17 @@
          ("C-c n i" . org-roam-node-insert)
          ("C-c n t i" . org-roam-dailies-goto-today)
          ("C-c n t c" . org-roam-dailies-capture-today)))
+
+;; Initializing elfeed
+(require 'elfeed-org)
+(elfeed-org)
+(setq rmh-elfeed-org-files (list "~/org/elfeed.org"))
+
+;; Config for smudge
+(use-package! smudge
+  :bind-keymap ("C-c ." . smudge-command-map)
+  :custom
+  (smudge-oauth2-client-secret "YOUR_CLIENT_SECRET")
+  (smudge-oauth2-client-id "YOUR_CLIENT_ID")
+  ;; optional: enable transient map for frequent commands
+  (smudge-player-use-transient-map t))
