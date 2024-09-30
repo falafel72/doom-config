@@ -1,0 +1,6 @@
+#+title: Elfeed
+
+* Blogs :elfeed:
+** [[https://jvns.ca/atom.xml][Julia Evans]]
+** [[https://sonnet.io/feed.xml][Rafael Pastuszak]]
+** [[https://www.joshwcomeau.com/rss.xml][Josh Comeau]]

@@ -145,7 +145,7 @@
 ;; Initializing elfeed
 (require 'elfeed-org)
 (elfeed-org)
-(setq rmh-elfeed-org-files (list "~/org/elfeed.org"))
+(setq rmh-elfeed-org-files (list "~/.config/doom/elfeed.org"))
 
 ;; Config for smudge
 (use-package! smudge
