@@ -138,7 +138,9 @@
          ("C-c n f" . org-roam-node-find)
          ("C-c n i" . org-roam-node-insert)
          ("C-c n t i" . org-roam-dailies-goto-today)
-         ("C-c n t c" . org-roam-dailies-capture-today)))
+         ("C-c n t c" . org-roam-dailies-capture-today)
+         ("C-c n t n" . org-roam-dailies-goto-tomorrow)
+         ("C-c n t d" . org-roam-dailies-find-date)))
 
 ;; Initializing elfeed
 (require 'elfeed-org)
