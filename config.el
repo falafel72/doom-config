@@ -138,7 +138,9 @@
          ("C-c n f" . org-roam-node-find)
          ("C-c n i" . org-roam-node-insert)
          ("C-c n t i" . org-roam-dailies-goto-today)
-         ("C-c n t c" . org-roam-dailies-capture-today)))
+         ("C-c n t c" . org-roam-dailies-capture-today)
+         ("C-c n t n" . org-roam-dailies-goto-tomorrow)
+         ("C-c n t d" . org-roam-dailies-goto-date)))
 
 ;; Initializing elfeed
 (require 'elfeed-org)
@@ -149,7 +151,7 @@
 (use-package! smudge
   :bind-keymap ("C-c ." . smudge-command-map)
   :custom
-  (smudge-oauth2-client-secret "acd0204015ee4bd5a8340cb0ba7401dd")
-  (smudge-oauth2-client-id "4c0c7bf317be4a278851a027d2a938a7")
+  (smudge-oauth2-client-secret "YOUR_CLIENT_SECRET")
+  (smudge-oauth2-client-id "YOUR_CLIENT_ID")
   ;; optional: enable transient map for frequent commands
   (smudge-player-use-transient-map t))
