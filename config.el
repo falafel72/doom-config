@@ -140,7 +140,7 @@
          ("C-c n t i" . org-roam-dailies-goto-today)
          ("C-c n t c" . org-roam-dailies-capture-today)
          ("C-c n t n" . org-roam-dailies-goto-tomorrow)
-         ("C-c n t d" . org-roam-dailies-find-date)))
+         ("C-c n t d" . org-roam-dailies-goto-date)))
 
 ;; Initializing elfeed
 (require 'elfeed-org)
