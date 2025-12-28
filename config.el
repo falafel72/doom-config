@@ -147,6 +147,9 @@
 (elfeed-org)
 (setq rmh-elfeed-org-files (list "~/.config/doom/elfeed.org"))
 
+;; Set vterm shell to fish
+(setq vterm-shell "/run/current-system/sw/bin/fish")
+
 ;; Config for smudge
 (use-package! smudge
   :bind-keymap ("C-c ." . smudge-command-map)
