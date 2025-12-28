@@ -55,3 +55,7 @@
 
 ;; simple-httpd
 (package! simple-httpd)
+
+;;
+(package! xdg-launcher
+  :recipe (:host github :repo "emacs-exwm/xdg-launcher"))

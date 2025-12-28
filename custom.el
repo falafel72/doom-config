@@ -6,7 +6,10 @@
  '(magit-todos-insert-after '(bottom) nil nil "Changed by setter of obsolete option `magit-todos-insert-at'")
  '(org-latex-pdf-process
    '("latexmk -f -pdf -interaction=nonstopmode -output-directory=%o %f"))
- '(package-selected-packages '(oauth2 elfeed-goodies elfeed-org elfeed org-roam pdf-tools ess @)))
+ '(package-selected-packages
+   '(@ elfeed elfeed-goodies elfeed-org ess oauth2 org-roam pdf-tools xdg-launcher))
+ '(package-vc-selected-packages
+   '((xdg-launcher :url "https://github.com/emacs-exwm/xdg-launcher"))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

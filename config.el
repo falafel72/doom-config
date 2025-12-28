@@ -158,3 +158,6 @@
   (smudge-oauth2-client-id "YOUR_CLIENT_ID")
   ;; optional: enable transient map for frequent commands
   (smudge-player-use-transient-map t))
+
+;; Config for xdg-launcher
+(use-package xdg-launcher)
